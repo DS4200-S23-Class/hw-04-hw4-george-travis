@@ -3,24 +3,74 @@
 
 <head>
     <meta charset=utf-8/>
+    <link rel="stylesheet" href="style.css">
 
     <title>hw-04</title>
 </head>
 
 
 <body>
-    <header>hw-04: Event Handling</header>
+    <h2>hw-04: Event Handling</h2>
 
     <div class=column>
         <div class="column-item">
-
+            <svg id="frame">
+                <circle cx="60" cy="400" r="10" fill="blue" id="p1"/>
+                <circle cx="110" cy="300" r="10" fill="blue" id="p2"/>
+                <circle cx="310" cy="300" r="10" fill="blue" id="p3"/>
+                <circle cx="460" cy="50" r="10" fill="blue" id="p4"/>
+                <circle cx="0" cy="0" r="0" fill="white" id="userP"/>
+                <line x1="0" y1="510" x2="510" y2="510" stroke="rgb(0,0,0)" stroke-width="10" id="xAxis"/>
+                <line x1="0" y1="0" x2="0" y2="510" stroke="rgb(0,0,0)" stroke-width="10" id="yAxis"/>
+            </svg>
         </div>
 
         <div class="column-item">
-            
+            <p id="p">Last point clicked: </p>
+            <br><br>
+
+            <form id="form1">
+                Select the x coordinate for the point you want to add.
+                <select id="sel1">
+                    <option>1</option>
+                    <option>2</option>
+                    <option>3</option>
+                    <option>4</option>
+                    <option>5</option>
+                    <option>6</option>
+                    <option>7</option>
+                    <option>8</option>
+                    <option>9</option>
+                </select>
+            <br><br>
+                Select the y coordinate for the point you want to add.
+                <select id="sel2">
+                    <option>1</option>
+                    <option>2</option>
+                    <option>3</option>
+                    <option>4</option>
+                    <option>5</option>
+                    <option>6</option>
+                    <option>7</option>
+                    <option>8</option>
+                    <option>9</option>
+                </select>
+            <br><br>
+
+            <input type="button" id="addBtn" value="Add point!">
+            </form>
         </div>
     </div>
 
+    <h4>Acknowledgements</h4>
+        <div>
+            <ul>
+                <li><a href="https://stackoverflow.com/questions/25025171/changing-properties-of-svg-circle-in-html5-js">Set attributes</a></li>
+                <li><a href="https://www.w3schools.com/js/js_input_examples.asp">JS input examples</a></li>
+                <li><a href="https://www.w3schools.com/js/tryit.asp?filename=tryjs_form_elements">Gathering input from a form</a></li>
+        </div>
+
+    <script src="main.js"></script>
 </body>
 
 </html>
